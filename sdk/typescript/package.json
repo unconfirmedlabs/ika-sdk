@@ -1,0 +1,46 @@
+{
+  "name": "@unconfirmed/ika",
+  "version": "0.1.0",
+  "description": "Typed query helpers and transaction builders for Ika dWallets on Sui.",
+  "license": "BSD-3-Clause-Clear",
+  "module": "src/index.ts",
+  "types": "src/index.ts",
+  "type": "module",
+  "sideEffects": false,
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:unit": "vitest run test/unit",
+    "test:integration": "vitest run test/integration"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./client": "./src/client.ts",
+    "./transactions": "./src/transactions.ts",
+    "./types": "./src/types.ts",
+    "./crypto": "./src/crypto.ts",
+    "./validation": "./src/validation.ts",
+    "./wasm": "./src/wasm.ts"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "package.json"
+  ],
+  "peerDependencies": {
+    "@mysten/sui": "^2.5.0",
+    "typescript": "^5"
+  },
+  "devDependencies": {
+    "@mysten/sui": "2.11.0",
+    "@types/bun": "latest",
+    "vitest": "3.2.4",
+    "@vitest/coverage-v8": "3.2.4",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@unconfirmed/ika-wasm": "npm:@ika.xyz/ika-wasm@0.2.1",
+    "@noble/curves": "^2.0.1",
+    "@noble/hashes": "^2.0.1"
+  }
+}
