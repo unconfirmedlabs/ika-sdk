@@ -38,7 +38,7 @@
     "@vitest/coverage-v8": "3.2.4"
   },
   "dependencies": {
-    "@unconfirmed/ika-wasm": "npm:@ika.xyz/ika-wasm@0.2.1",
+    "@ika.xyz/ika-wasm": "0.2.1",
     "@noble/curves": "^2.0.1",
     "@noble/hashes": "^2.0.1"
   }
